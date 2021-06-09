@@ -1,6 +1,37 @@
+/* ------------------------------Variabler------------------------------------  */
+html {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #6b8498;
+  --yellow: #ecb73f;
+  --green: #7c887d;
+  --red: #e24f27;
+}
+/* ------------------------------Typografi------------------------------------  */
+/* Overskrift */
+h1 {
+  font-family: "Bungee", sans-serif;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/* Citat  */
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+/* Tekst til IMG */
+h4 {
+  font-family: "Bungee", sans-serif;
+}
+
 /* ------------------------------Burgermenu------------------------------------  */
 header {
   padding: 10px;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
 }
 
 /* Menuen er der stadig, men den er usynling */
