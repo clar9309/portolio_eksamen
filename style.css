@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* ------------------------------Variabler------------------------------------  */
 html {
   --black: #000000;
@@ -33,6 +37,10 @@ header {
   font-family: "Roboto", sans-serif;
   justify-content: space-between;
 }
+nav {
+  display: grid;
+  text-align: end;
+}
 
 /* Menuen er der stadig, men den er usynling */
 /* Ved transform er den ude til venstre, dvs. hvis man fjerne transform og opacity, er de der stadig */
@@ -43,11 +51,6 @@ header {
 
 #menuknap {
   display: inline-block;
-}
-
-nav {
-  display: grid;
-  text-align: end;
 }
 
 /* Styler menuen  */
