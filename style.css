@@ -56,7 +56,7 @@ h5 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
+  font-size: 1rem;
   max-width: 80ch;
   /* line-height: 2rem; */
 }
@@ -111,7 +111,7 @@ udgangspunkt i top og left */
 nav ul li::after {
   content: "";
   width: 0%;
-  height: 0.5vw;
+  height: 0.2rem;
   background: var(--black);
   display: block;
   margin: auto;
@@ -144,6 +144,41 @@ så mit splashbillede kan*/
   background-position: 45% 8%;
 }
 
+/* .slideshow {
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.slideshow img {
+  position: absolute; 
+  animation: slideshow 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slideshow {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.slideshow img:nth-child(4) {
+  animation-delay: 0s;
+}
+.slideshow img:nth-child(3) {
+  animation-delay: 5s;
+}
+.slideshow img:nth-child(2) {
+  animation-delay: 10s;
+}
+.slideshow img:nth-child(1) {
+  animation-delay: 10s;
+} */
+
 /* Hvis skærmen er større end 600px  */
 
 @media (min-width: 600px) {
@@ -175,7 +210,7 @@ så mit splashbillede kan*/
   nav ul li::after {
     content: "";
     width: 0%;
-    height: 0.5vw;
+    height: 0.2rem;
     background: var(--black);
     display: block;
     margin: auto;
