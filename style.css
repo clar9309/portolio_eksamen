@@ -173,7 +173,7 @@ få hver sin plads*/
   background-size: cover;
   height: 35rem;
   width: 100%;
-  background-position: 45% 8%;
+  background-position: 54% 8%;
 }
 #home_section .intro {
   grid-column: 6/6;
@@ -184,13 +184,13 @@ få hver sin plads*/
 }
 
 .h1_1 {
-  grid-column: 4/6;
-  grid-row: 1/6;
+  grid-column: 6/8;
+  grid-row: 3/6;
 }
 
 .h1_2 {
-  grid-column: 3/6;
-  grid-row: 3/6;
+  grid-column: 4/6;
+  grid-row: 4/9;
 }
 
 .h1_3 {
