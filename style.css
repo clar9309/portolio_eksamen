@@ -31,8 +31,8 @@ html {
 /* ------------------------------Typografi------------------------------------  */
 /* Overskrift */
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 7rem;
+  font-family: "Bungee", sans-serif;
+  font-size: clamp(3rem, 21.3vw - 6.3rem, 7rem);
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -124,12 +124,13 @@ så mit splashbillede kan*/
 }
 
 .splashbillede {
-  background-image: url(img/splash.png);
+  background-image: url(img/splash1.png);
   grid-column: 1 / 8;
   grid-row: 1 / 8;
   background-size: cover;
   height: 20rem;
   width: 100%;
+  background-position: 45% 8%;
 }
 
 /* Hvis skærmen er større end 600px  */
