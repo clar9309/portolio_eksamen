@@ -127,6 +127,7 @@ button a {
   text-decoration: none;
   color: var(--black);
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
 }
 button {
