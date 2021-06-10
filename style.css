@@ -32,7 +32,7 @@ html {
 /* Overskrift */
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(3rem, 21.3vw - 6.3rem, 7rem);
+  font-size: clamp(6rem, 5.3vw + 3.7rem, 7rem);
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -59,6 +59,11 @@ p {
   font-size: 1rem;
   max-width: 80ch;
   /* line-height: 2rem; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 /* ------------------------------Burgermenu------------------------------------  */
@@ -164,15 +169,15 @@ få hver sin plads*/
 
 #home_section {
   display: grid;
-  grid-template-columns: repeat(5 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  /* background-image: url(home_img/splash3.png); */
+  grid-template-columns: repeat(7 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  background-image: url(home_img/splash100.png);
   grid-column: 1 / 8;
   grid-row: 1 / 8;
-  /* background-size: cover; */
+  background-size: cover;
   height: 35rem;
   width: 100%;
-  /* background-position: 54% 8%; */
+  background-position: 54% 8%;
 }
 #home_section .intro {
   grid-column: 6/6;
@@ -201,6 +206,14 @@ få hver sin plads*/
   grid-column: 1/6;
   grid-row: 5/7;
 }
+
+/* Om mig section  */
+#galleri_img .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
 /* Portfolio section */
 
 #portfolio_img {
@@ -219,24 +232,36 @@ få hver sin plads*/
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* 02_UX section */
+/* 02_web section */
+#web_section h1 {
+  color: var(--red);
+}
+
+/* 03_UX section */
 
 #ux_section h1 {
   color: var(--blue);
 }
 
-#produkt_img {
+#produkt_img .section_wrapper {
   filter: grayscale(100%);
-}
-
-/* UX section */
-
-#ux_section {
   display: grid;
-  justify-content: center;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
 
+/* 04_animation section */
+#animation_section h1 {
+  font-size: 10rem;
+  margin-top: 0;
+  color: var(--yellow);
+}
+
+/* .under4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+} */
 /* Hvis skærmen er større end 600px  */
 
 @media (min-width: 600px) {
