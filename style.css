@@ -36,10 +36,11 @@ h1 {
 }
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(2rem, 5.3vw - 0.3rem, 3rem);
 }
 h3 {
   font-family: "Roboto", sans-serif;
+  font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
 }
 /* Citat  */
 h4 {
@@ -53,15 +54,11 @@ h5 {
   font-size: 1rem;
 }
 
-/* Tekst til IMG */
-h6 {
-  font-family: "Bungee", sans-serif;
-}
-
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
+  max-width: 80ch;
+  /* line-height: 2rem; */
 }
 
 /* ------------------------------Burgermenu------------------------------------  */
@@ -109,7 +106,21 @@ udgangspunkt i top og left */
 #menu a {
   text-decoration: none;
 }
+/* navigation ved hover i mobile  */
 
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 0.5vw;
+  background: var(--black);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
 /* ------------------------------Sections------------------------------------  */
 
 /* First section */
@@ -158,5 +169,20 @@ så mit splashbillede kan*/
   }
   .row {
     display: flex;
+  }
+  /* Streg under tekst i navigation ved hover i desktop  */
+
+  nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 0.5vw;
+    background: var(--black);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
   }
 }
