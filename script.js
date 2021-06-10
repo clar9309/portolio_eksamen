@@ -14,7 +14,7 @@ function toggleMenu() {
   //Skjuler burger menu
   let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 
-  //hvis den indeholder class hidden, og dt er sandt, så skjuler den det. Og hvis den ikke indeholder hidden, så er det falsk.
+  //hvis den indeholder class hidden, og det er sandt, så skjuler den det. Og hvis den ikke indeholder hidden, så er det falsk.
   if (erSkjult == true) {
     document.querySelector("#menuknap").textContent = "☰";
   } else {
