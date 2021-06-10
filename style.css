@@ -27,6 +27,7 @@ html {
   --yellow: #ecb73f;
   --green: #7c887d;
   --red: #e24f27;
+  --pink: #c16d66;
 }
 /* ------------------------------Typografi------------------------------------  */
 /* Overskrift */
@@ -252,7 +253,6 @@ få hver sin plads*/
 
 /* 04_animation section */
 #animation_section h1 {
-  font-size: 10rem;
   margin-top: 0;
   color: var(--yellow);
 }
@@ -262,6 +262,19 @@ få hver sin plads*/
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 } */
+
+/* 05_indhold section */
+#indhold_section h1 {
+  color: var(--green);
+  margin-top: 0;
+}
+
+/* 06_portfolio section  */
+#portfolio06_section h1 {
+  color: var(--pink);
+  margin-top: 0;
+}
+
 /* Hvis skærmen er større end 600px  */
 
 @media (min-width: 600px) {
@@ -311,5 +324,57 @@ få hver sin plads*/
   #portfolio_img .section_wrapper {
     display: flex;
     grid-gap: 20px;
+  }
+
+  /* 05_indhold sections */
+  #indhold_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  #indhold_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* 04_animation sections */
+  #animation_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  #animation_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* 05_indhold sections */
+  #indhold_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  #indhold_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* 06_portfolio sections */
+  #portfolio06_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  #portfolio06_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
