@@ -70,6 +70,13 @@ a {
   color: var(--black);
 }
 
+#side_skift {
+  display: flex;
+  font-size: clamp(1rem, 10.7vw - 3.7rem, 3rem);
+  justify-content: space-between;
+  padding: 4rem;
+}
+
 /* ------------------------------Burgermenu------------------------------------  */
 header {
   display: flex;
@@ -210,7 +217,9 @@ få hver sin plads*/
   grid-column: 1/6;
   grid-row: 5/7;
 }
-/* ------------------------------Pil ned til sektioner------------------------------------  */
+
+/* Pil_Ned sektion */
+
 #home_section a {
   font-size: 4rem;
   grid-column: 3/4;
