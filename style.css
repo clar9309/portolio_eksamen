@@ -257,6 +257,11 @@ få hver sin plads*/
   color: var(--yellow);
 }
 
+#animation_section {
+  display: grid;
+  margin-top: 10px;
+}
+
 /* .under4 {
   display: grid;
   grid-template-columns: 1fr;
@@ -274,7 +279,6 @@ få hver sin plads*/
   color: var(--pink);
   margin-top: 0;
 }
-
 
 /* Hvis skærmen er større end 600px  */
 
