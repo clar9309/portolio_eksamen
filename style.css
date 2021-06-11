@@ -332,6 +332,18 @@ få hver sin plads*/
     display: flex;
     grid-gap: 20px;
   }
+  /* 02_web sections */
+  #web_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  #web_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   /* 05_indhold sections */
   #indhold_section .section_wrapper {
