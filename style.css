@@ -34,6 +34,7 @@ html {
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: clamp(6rem, 5.3vw + 3.7rem, 7rem);
+  margin-top: 0%;
 }
 h2 {
   font-family: "Roboto", sans-serif;
