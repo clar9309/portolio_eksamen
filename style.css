@@ -278,6 +278,7 @@ få hver sin plads*/
 #genveje_img {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  padding-bottom: 2rem;
 }
 
 #genveje_img .section_wrapper {
@@ -289,6 +290,13 @@ få hver sin plads*/
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.tema2,
+.tema3,
+.tema4,
+.tema5,
+.tema6 {
+  padding-bottom: 2rem;
+}
 /* -------------------------------OM MIG / CV ---------------------------------- */
 
 #galleri_img .section_wrapper {
