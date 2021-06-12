@@ -375,6 +375,13 @@ få hver sin plads*/
   margin-top: 0;
 }
 
+/* -------------------------------06_portfolio---------------------------------- */
+
+#portfolio06_section h1 {
+  color: var(--pink);
+  margin-top: 0;
+}
+
 /* -------------------------------Dokumentation---------------------------------- */
 
 /* #doku_section img {
@@ -593,6 +600,7 @@ få hver sin plads*/
   } */
 
   /* -------------------------------06_portfolio RESPONSIV---------------------------------- */
+
   #portfolio06_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -618,9 +626,13 @@ få hver sin plads*/
     flex-direction: column;
   }
 
+  /* -------------------------------Refleksion---------------------------------- */
+
   /* Responsiv footer  */
   #footer {
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .sociale_medier img:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
@@ -628,11 +640,37 @@ få hver sin plads*/
   }
 
   .telefon {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
+  .telefon a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: var(--red);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .telefon a:hover:after {
+    width: 100%;
+  }
+
   .mail {
-    display: flex;
-    justify-content: center;
+    display: block;
+  }
+
+  .mail a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: var(--red);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .mail a:hover:after {
+    width: 100%;
   }
 }
