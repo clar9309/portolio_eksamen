@@ -43,7 +43,7 @@ html {
 /* Overskrift */
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(6rem, 5.3vw + 3.7rem, 7rem);
+  font-size: clamp(5rem, 5.3vw + 3.7rem, 7rem);
   margin-top: 0%;
 }
 h2 {
@@ -70,6 +70,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   max-width: 80ch;
+  line-height: 2rem;
   /* line-height: 2rem; */
 }
 
@@ -83,7 +84,7 @@ a {
   margin-right: 3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* Side skift mellem portfolio siderne  */
@@ -221,7 +222,7 @@ button:hover::after {
 }
 /* ----------------------------------------------Sections---------------------------------------------------  */
 
-/* -------------------------------06_portfolio---------------------------------- */
+/* -------------------------------HOME section---------------------------------- */
 
 /* Jeg laver et grid til min home section, så mine tekster kan
 få hver sin plads*/
@@ -270,7 +271,7 @@ få hver sin plads*/
 
 #home_section a {
   font-size: 4rem;
-  grid-column: 3/4;
+  grid-column: 4/4;
   grid-row: 7/8;
 }
 
@@ -280,8 +281,6 @@ få hver sin plads*/
 }
 
 #genveje_img .section_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -291,12 +290,19 @@ få hver sin plads*/
 }
 
 /* -------------------------------OM MIG / CV ---------------------------------- */
+
 #galleri_img .section_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1f;
   grid-gap: 20px;
 }
+.col_img {
+  box-shadow: 24px 24px 0px 0px var(--red);
+}
 
+.col_img img:hover {
+  filter: grayscale(100%);
+}
 /* -------------------------------Portfolio---------------------------------- */
 
 #portfolio_img {
@@ -316,6 +322,7 @@ få hver sin plads*/
 }
 
 /* -------------------------------02_web---------------------------------- */
+
 #web_section h1 {
   color: var(--red);
 }
@@ -413,7 +420,10 @@ få hver sin plads*/
     width: 100%;
   }
   /* -------------------------------HOME RESPONSIV---------------------------------- */
-  /* HUSK PIL NED */
+  #home_section a {
+    font-size: 4rem;
+    grid-column: 5/10;
+  }
 
   #home_section {
     width: 100%;
@@ -423,7 +433,7 @@ få hver sin plads*/
   }
 
   #home_section .intro {
-    grid-column: 7/8;
+    grid-column: 8/8;
     grid-row: 6/8;
   }
 
@@ -433,11 +443,13 @@ få hver sin plads*/
   }
 
   .h1_2 {
+    padding-top: 3rem;
     grid-column: 4/6;
     grid-row: 4/9;
   }
 
   .h1_3 {
+    padding-top: 3rem;
     grid-column: 6/6;
     grid-row: 5/7;
   }
@@ -450,9 +462,43 @@ få hver sin plads*/
     display: flex;
     grid-gap: 20px;
   }
-  /* -------------------------------OM MIG SITE---------------------------------- */
+  /* -------------------------------OM MIG SITE RESPONSIV---------------------------------- */
 
-  /* -------------------------------PORTFOLIO / TEMA OVERSIGT---------------------------------- */
+  #cv_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col_img {
+    grid-column: 3/3;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .col_img {
+    box-shadow: 24px 24px 0px 0px var(--red);
+  }
+
+  .col_img img:hover {
+    filter: grayscale(100%);
+  }
+
+  .col_tekst {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  /* Galleri section  */
+  #galleri_img .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #galleri_img img {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  /* -------------------------------PORTFOLIO / TEMA OVERSIGT RESPONSIV---------------------------------- */
 
   #portfolio_img {
     display: flex;
@@ -462,7 +508,8 @@ få hver sin plads*/
     display: flex;
     grid-gap: 20px;
   }
-  /* -------------------------------02_WEB---------------------------------- */
+  /* -------------------------------02_WEB RESPONSIV---------------------------------- */
+
   #web_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -475,7 +522,7 @@ få hver sin plads*/
     justify-content: space-between;
   }
 
-  /* -------------------------------03_UX---------------------------------- */
+  /* -------------------------------03_UX RESPONSIV---------------------------------- */
   #ux_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -488,7 +535,7 @@ få hver sin plads*/
     justify-content: space-between;
   }
 
-  /* -------------------------------04_animation---------------------------------- */
+  /* -------------------------------04_animation RESPONSIV---------------------------------- */
   #animation_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -501,7 +548,7 @@ få hver sin plads*/
     justify-content: space-between;
   }
 
-  /* -------------------------------05_Indhold---------------------------------- */
+  /* -------------------------------05_Indhold RESPONSIV---------------------------------- */
   #indhold_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -526,7 +573,7 @@ få hver sin plads*/
     justify-content: space-between;
   } */
 
-  /* -------------------------------06_portfolio---------------------------------- */
+  /* -------------------------------06_portfolio RESPONSIV---------------------------------- */
   #portfolio06_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
