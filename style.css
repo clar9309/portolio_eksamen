@@ -343,8 +343,8 @@ få hver sin plads*/
 
 #produkt_img .section_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 #produkt_img img:hover {
@@ -375,11 +375,22 @@ få hver sin plads*/
   margin-top: 0;
 }
 
-/* -------------------------------06_portfolio---------------------------------- */
-#portfolio06_section h1 {
-  color: var(--pink);
-  margin-top: 0;
+/* -------------------------------Dokumentation---------------------------------- */
+
+/* #doku_section img {
+  width: 50rem;
+} */
+
+#doku_section .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
+
+#doku_section img:hover {
+  filter: grayscale(100%);
+}
+
 /* -------------------------------Responsiv / Desk top---------------------------------- */
 
 /* Hvis skærmen er større end 600px  */
@@ -592,6 +603,19 @@ få hver sin plads*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  /* -------------------------------Dokumentation---------------------------------- */
+
+  #doku_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  #doku_section .col {
+    display: flex;
+    flex-direction: column;
   }
 
   /* Responsiv footer  */
