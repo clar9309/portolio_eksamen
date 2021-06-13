@@ -673,4 +673,18 @@ få hver sin plads*/
   .mail a:hover:after {
     width: 100%;
   }
+
+  #links a::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: var(--red);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  #links a:hover:after {
+    width: 100%;
+  }
 }
