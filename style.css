@@ -69,7 +69,7 @@ h5 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  max-width: 80ch;
+  max-width: 60ch;
   line-height: 2rem;
   /* line-height: 2rem; */
 }
@@ -229,8 +229,8 @@ få hver sin plads*/
 
 #home_section {
   display: grid;
-  grid-template-columns: repeat(7 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(8 1fr);
+  grid-template-rows: repeat(8, 1fr);
   background-image: url(home_img/splash100.png);
   grid-column: 1 / 8;
   grid-row: 1 / 8;
@@ -475,7 +475,7 @@ få hver sin plads*/
   }
 
   .h1_3 {
-    padding-top: 3rem;
+    padding-top: 5rem;
     grid-column: 6/6;
     grid-row: 5/7;
   }
