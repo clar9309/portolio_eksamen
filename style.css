@@ -398,6 +398,30 @@ få hver sin plads*/
   filter: grayscale(100%);
 }
 
+/* -------------------------------Brødkrumme sti---------------------------------- */
+
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.breadcrumb li + li:before {
+  content: "/\00a0";
+  color: var(--black);
+  padding: 1rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.breadcrumb a:hover {
+  font-weight: bold;
+}
 /* -------------------------------Responsiv / Desk top---------------------------------- */
 
 /* Hvis skærmen er større end 600px  */
@@ -432,7 +456,7 @@ få hver sin plads*/
   }
   /* Streg under tekst i navigation ved hover i desktop  */
 
-  nav ul li::after {
+  nav ul li::after:hover {
     content: "";
     width: 0%;
     height: 0.2rem;
