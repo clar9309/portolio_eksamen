@@ -48,11 +48,11 @@ h1 {
 }
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(2rem, 5.3vw - 0.3rem, 3rem);
+  font-size: clamp(1.5rem, 5.3vw - 0.3rem, 2rem);
 }
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
+  font-size: clamp(1.5rem, 5.3vw - 1.3rem, 2rem);
 }
 /* Citat  */
 /* h4 {
