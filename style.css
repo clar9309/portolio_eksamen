@@ -172,7 +172,7 @@ udgangspunkt i top og left */
 }
 /* navigation ved hover i mobile  */
 
-/* nav ul li::after {
+nav ul li::after {
   content: "";
   width: 0%;
   height: 0.2rem;
@@ -184,7 +184,7 @@ udgangspunkt i top og left */
 
 nav ul li:hover::after {
   width: 100%;
-} */
+}
 
 /* ------------------------------Buttons------------------------------------  */
 button a {
@@ -452,6 +452,7 @@ ul.breadcrumb a:hover {
   #menu li {
     display: inline-block;
   }
+
   .column {
     flex: 1;
     padding: 5px;
