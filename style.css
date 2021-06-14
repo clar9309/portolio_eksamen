@@ -408,6 +408,8 @@ få hver sin plads*/
   font-weight: 100;
 }
 
+/*  */
+
 .breadcrumb li + li:before {
   content: "/\00a0";
   color: var(--black);
