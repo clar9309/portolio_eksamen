@@ -408,7 +408,7 @@ få hver sin plads*/
   font-weight: 100;
 }
 
-/*  */
+/* Li + Li betyder, at der skal være en skråstreg mellem listerne. */
 
 .breadcrumb li + li:before {
   content: "/\00a0";
