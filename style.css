@@ -275,7 +275,7 @@ få hver sin plads*/
 
 #home_section a {
   font-size: 4rem;
-  grid-column: 4/4;
+  grid-column: 5/6;
   grid-row: 7/8;
 }
 
