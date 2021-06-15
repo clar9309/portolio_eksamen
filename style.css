@@ -55,6 +55,16 @@ h3 {
   font-size: clamp(1.5rem, 5.3vw - 1.3rem, 2rem);
 }
 
+/* Dato - Erhvervserfaring */
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* Paragraf */
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -62,11 +72,14 @@ p {
   line-height: 2rem;
   /* line-height: 2rem; */
 }
+/* A tags  */
 
 a {
   text-decoration: none;
   color: var(--black);
 }
+
+/* Citater  */
 
 .citat {
   margin-left: 3rem;
