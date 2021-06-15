@@ -26,19 +26,6 @@ body {
   margin-right: 2rem;
 }
 
-/* ------------------------------Variabler------------------------------------  */
-
-html {
-  --black: #000000;
-  --white: #ffffff;
-  --blue: #6b8498;
-  --yellow: #ecb73f;
-  --green: #7c887d;
-  --red: #e24f27;
-  --pink: #c16d66;
-
-  scroll-behavior: smooth;
-}
 /* ------------------------------Regler for hele sitet------------------------------------  */
 /* Overskrift */
 h1 {
@@ -98,32 +85,18 @@ a {
   padding: 4rem;
 }
 
-/* ------------------------------Footer------------------------------------  */
-#footer {
-  justify-content: center;
-  padding-top: 1rem;
-}
+/* ------------------------------Variabler------------------------------------  */
 
-.sociale_medier {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.sociale_medier img {
-  width: 2rem;
-}
-.sociale_medier img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+html {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #6b8498;
+  --yellow: #ecb73f;
+  --green: #7c887d;
+  --red: #e24f27;
+  --pink: #c16d66;
 
-.telefon {
-  text-align: center;
-}
-
-.mail {
-  text-align: center;
+  scroll-behavior: smooth;
 }
 
 /* ------------------------------Navigation------------------------------------  */
@@ -188,8 +161,36 @@ nav ul li:hover::after {
   width: 100%;
 }
 
+/* ------------------------------Footer------------------------------------  */
+#footer {
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.sociale_medier {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.sociale_medier img {
+  width: 2rem;
+}
+.sociale_medier img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.telefon {
+  text-align: center;
+}
+
+.mail {
+  text-align: center;
+}
+
 /* ------------------------------Buttons------------------------------------  */
-button a {
+/* button a {
   text-decoration: none;
   color: var(--black);
   font-family: "Roboto", sans-serif;
@@ -221,7 +222,7 @@ button::after {
 
 button:hover::after {
   width: 100%;
-}
+} */
 /* ----------------------------------------------Sections---------------------------------------------------  */
 
 /* -------------------------------HOME section---------------------------------- */
@@ -367,12 +368,6 @@ få hver sin plads*/
   margin-top: 10px;
 }
 
-/* .under4 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-} */
-
 /* -------------------------------05_indhold---------------------------------- */
 
 #indhold_section h1 {
@@ -388,10 +383,6 @@ få hver sin plads*/
 }
 
 /* -------------------------------Dokumentation---------------------------------- */
-
-/* #doku_section img {
-  width: 50rem;
-} */
 
 #doku_section .section_wrapper {
   display: grid;
@@ -619,18 +610,6 @@ ul.breadcrumb a:hover {
     justify-content: space-between;
   }
 
-  /* #indhold_section .section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
-
-  #indhold_section .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
-
   /* -------------------------------06_portfolio RESPONSIV---------------------------------- */
 
   #portfolio06_section .section_wrapper {
@@ -705,6 +684,8 @@ ul.breadcrumb a:hover {
   .mail a:hover:after {
     width: 100%;
   }
+
+  /* Links  */
 
   #links a::after {
     content: "";
