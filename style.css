@@ -11,7 +11,7 @@ img {
 
 .index {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 12000px) 1fr;
+  grid-template-columns: 2fr minmax(0, 12000px) 2fr;
   gap: 10px;
 }
 
@@ -53,17 +53,6 @@ h2 {
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: clamp(1.5rem, 5.3vw - 1.3rem, 2rem);
-}
-/* Citat  */
-/* h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1.5rem;
-} */
-h5 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
 }
 
 p {
