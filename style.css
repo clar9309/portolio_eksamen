@@ -310,6 +310,7 @@ få hver sin plads*/
   grid-template-columns: 1fr 1f;
   grid-gap: 20px;
 }
+
 .col_img {
   box-shadow: 24px 24px 0px 0px var(--red);
 }
@@ -317,6 +318,11 @@ få hver sin plads*/
 .col_img img:hover {
   filter: grayscale(100%);
 }
+
+.tekst_img {
+  margin-top: 3rem;
+}
+
 /* -------------------------------Portfolio---------------------------------- */
 
 #portfolio_img {
