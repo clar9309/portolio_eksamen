@@ -190,40 +190,6 @@ nav ul li:hover::after {
   text-align: center;
 }
 
-/* ------------------------------Buttons------------------------------------  */
-/* button a {
-  text-decoration: none;
-  color: var(--black);
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
-}
-button {
-  border: solid var(--black);
-  background-color: transparent;
-  padding: 0.8rem;
-}
-
-button:hover {
-  background-color: var(--black);
-}
-
-button a:hover {
-  color: var(--white);
-}
-button::after {
-  content: "";
-  width: 0%;
-  height: 0.1rem;
-  background: var(--white);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-button:hover::after {
-  width: 100%;
-} */
 /* ----------------------------------------------Sections---------------------------------------------------  */
 
 /* -------------------------------HOME section---------------------------------- */
